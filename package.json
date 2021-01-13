@@ -1,0 +1,22 @@
+{
+  "name": "02-homework",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kashqar1117/readmme_generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kashqar1117/readmme_generator/issues"
+  },
+  "homepage": "https://github.com/kashqar1117/readmme_generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
