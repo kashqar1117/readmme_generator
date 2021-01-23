@@ -48,7 +48,7 @@ function writeToFile(fileName, data) {
             {
                 type: 'input',
                 name: 'testInsturctions',
-                message: "testing"
+                message: "Write your testing instructions."
             },
             {
                 type: 'input',
@@ -71,13 +71,29 @@ function writeToFile(fileName, data) {
                 type: 'input',
                 name: 'usage_image',
                 message: "enter usage image url"
+            },
+            {
+                type: 'list',
+                name: 'Badges',
+                choices: ['Apache 2.0' , 'BSD 3' , 'BSD2']
             }
+
           
 
             
         ])
         .then(answers => {
+            let badges;
 
+           if(answers.choices = 'Apache 2.0') 
+            {
+                badges = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+           }
+           else if(answers.choices = 'BSD 3'){
+                badges = '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
+           }else {
+               badges = '[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)'
+           }
 
             const title = answers.title
             const desc = answers.Description
@@ -86,17 +102,18 @@ function writeToFile(fileName, data) {
             const contribute = answers.contributionGuidlines
             const github = answers.gitHub
             const email = answers.email
-
+            const testing = answers.testing
             const markdown = `# ${title}
 
+${badges}
  ## Description
- 
  ${desc}
 
  ## Table of contents
  ### [Instructions for Instalation](#Instalation)
  ### [Usage Information](#usage)
  ### [Contribution Guidlines](#Contribution)
+ ### [Testing Instructions](#Testing)
  ### [Questions](#questions)
   1. Email
   2. Github Information
@@ -116,6 +133,10 @@ function writeToFile(fileName, data) {
   ## Contribution Guidlines
 
   ${contribute}
+
+  ## Testing Insttructions
+
+  ${testing}
 
   ## Questions
 
