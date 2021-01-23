@@ -1,23 +1,17 @@
+
+// pull in file system
 const fs = require('fs');
+//pull in inquirer
 const inq = require('inquirer')
 let title;
 
 
 
 
-// array of questions for user
-// const questions = [
-// "What is your project title?", 
-// "Description?",
-// "Instalation Instructions?",
-// "Usage Infromation", 
-// "Contribution guidelines?", 
-// "Test Instructions?" 
-// ];
 
 // function to write README file
 function writeToFile(fileName, data) {
-
+//promt questions from inquirer
     inq
         .prompt([
             {
@@ -83,6 +77,8 @@ function writeToFile(fileName, data) {
             
         ])
         .then(answers => {
+
+            //creating a badge varaible dynamically
             let badges;
 
            if(answers.choices = 'Apache 2.0') 
@@ -94,7 +90,7 @@ function writeToFile(fileName, data) {
            }else {
                badges = '[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)'
            }
-
+            // varblies to save answeres
             const title = answers.title
             const desc = answers.Description
             const install = answers.instalation
@@ -103,6 +99,9 @@ function writeToFile(fileName, data) {
             const github = answers.gitHub
             const email = answers.email
             const testing = answers.testing
+
+
+            //start of markdown file
             const markdown = `# ${title}
 
 ${badges}
@@ -148,7 +147,7 @@ ${badges}
 
   To contact me please send me an email from 9am to 5pm Sunday through Saturday.
   `
-
+            //functions to create new files
             fs.writeFile('README.md' , markdown ,(err) => {
                 if (err) throw err;
                 console.log('file saved')
@@ -158,12 +157,3 @@ ${badges}
         })
        
     }
-writeToFile()
-
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
