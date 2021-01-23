@@ -2,7 +2,7 @@
 // pull in file system
 const fs = require('fs');
 //pull in inquirer
-const inq = require('inquirer')
+const inq = require('./inquirer')
 let title;
 
 
@@ -147,7 +147,7 @@ ${badges}
 
   To contact me please send me an email from 9am to 5pm Sunday through Saturday.
   `
-            //functions to create new files
+           //writes to file
             fs.writeFile('README.md' , markdown ,(err) => {
                 if (err) throw err;
                 console.log('file saved')
