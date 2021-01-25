@@ -65,7 +65,7 @@ Github Username: ${github}
 
 URL: [Click Here to see my GitHub account](https://github.com/${github})
 
-Email: [${email}]
+Email: ${email}
 
 To contact me please send me an email from 9am to 5pm Sunday through Saturday.
 `
