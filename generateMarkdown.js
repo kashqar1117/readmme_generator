@@ -49,6 +49,9 @@ ${answers.instalation}
 
 ![Usage image](usage_image)
 
+
+![how to use](ezgif.com-gif-maker.gif)
+
 ${answers.usageInfromation}
 
 ## Contribution Guidlines

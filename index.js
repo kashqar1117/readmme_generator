@@ -75,6 +75,7 @@ function writeToFile(fileName, data) {
         .prompt(questions)
         .then(answers => {
 
+        const markdown  = generateMarkdown(answers)
            
            //writes to file
             fs.writeFile('README.md' , markdown ,(err) => {
