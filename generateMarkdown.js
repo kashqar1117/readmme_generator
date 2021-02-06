@@ -37,13 +37,10 @@ ${answers.Description}
 
 ## Instructions for Instalation
 
-![Instalation image](instal_image)
 
 ${answers.instalation}
 
 ## Usage Information
-
-![Usage image](usage_image)
 
 
 ![how to use](../ezgif.com-gif-maker.gif)
