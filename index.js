@@ -58,6 +58,11 @@ const questions = [
         message: "enter usage image url"
     },
     {
+        type: 'input',
+        name: 'videoLink',
+        message: "please enter a video link"
+    },
+    {
         type: 'list',
         name: 'Badges',
         choices: ['Apache 2.0' , 'BSD 3' , 'BSD2']
