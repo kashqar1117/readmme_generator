@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 ## Description
-This is an application i have built for myself to create quality reaadme's from my terminal.
+This is an application i have built for myself to create quality reaadme's from my terminal
 
 ## Table of contents
 ### [Instructions for Instalation](#Instalation)
@@ -16,13 +16,10 @@ This is an application i have built for myself to create quality reaadme's from 
 
 ## Instructions for Instalation
 
-![Instalation image](instal_image)
 
 If anyone wanted to use my generator, they would have to pull it from github, and use git clone in their teminal with the ssh link.
 
 ## Usage Information
-
-![Usage image](usage_image)
 
 
 ![how to use](../ezgif.com-gif-maker.gif)
@@ -35,7 +32,7 @@ n/a
 
 ## Testing Insttructions
 
-Open up the 'index.js' in the terminal. Use the command ' node index.js'. In the terminal, there will be a series of questions
+Open up the 'index.js' in the terminal. Use the command ' node index.js'. In the terminal, there will be a series of questions for you to answer, please answer  all questions. Once you are done answering questions right click on the 'README.ME' tab on the top left. Hit 'open preview' 
 
 ## Video Link
 
